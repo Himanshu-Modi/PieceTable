@@ -1,20 +1,13 @@
 # PieceTable
-<<<<<<< HEAD
+
 **Piece Table** is an efficent **Data Structure** that is used in **Text Editors**.<br />
-=======
-**Piece Table** is and efficent **Data Structure** that is used in **Text Editors**.<br />
->>>>>>> 35b0267... Update README.md
 It is used for representing a series of edits on a text document. Piece Table provides an elegant solution for text buffers.
 The piece table is the powerful data-structure behind many text editors, old and new. A key characteristic of the piece table is that it records all of the insertions we make to a file in an append-only manner.
 
 Piece Table stores the text doucment as a sequence of **pieces of text** either from original buffer or add buffer. 
 
 ## Why we need PieceTable?
-<<<<<<< HEAD
 Basically when  the text document is represented using an array of string it creates a problem of appending in the middle of document as the document is of large size.
-=======
-Basically when text document is represented using an array of string it creates a problem of appending in the middle of document as the document is of large size.
->>>>>>> 35b0267... Update README.md
 So elements needed to be shifted from the insertion point. There were also other problems of speeding up when files are opened and out of memory crashes. <br />
 Piece Table uses two buffers:
 * Original Buffer
@@ -77,10 +70,6 @@ So the Pieces are combined as
 
 However it is not removed from the Add buffer.
 The text to be added or removed as part of an undo or redo is already there in one of the buffers, and we just need to update our piece descriptors to point to it once again.
-<<<<<<< HEAD
-
-=======
->>>>>>> 35b0267... Update README.md
 
 ### References
 * https://darrenburns.net/posts/piece-table/
